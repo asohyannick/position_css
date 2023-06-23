@@ -1,13 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-   This is how we remove default styles in browsers using css.
-*/
-
+/* Remove all default browser styles */
 :root {
     background: transparent;
     border: none;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -154,4 +151,44 @@ h4::after {
 
 .emojify::after {
     content: '🤓 🥸 😎';
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+}
+
+.card-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.card-body {
+    position: absolute;
+    top: 8rem;
+    text-align: center;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.card-heading {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.headingOne {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 200px;
 }
