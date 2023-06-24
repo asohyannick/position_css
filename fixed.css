@@ -1,0 +1,45 @@
+:root {
+    background: #000;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main-element {
+    position: sticky;
+    bottom: 10px;
+    left: 10px;
+    background: yellow;
+    padding: 10px;
+}
+
+.sibling-element {
+    background: #F2f2f2;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #81adc8;
+}
+
+.fixed-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.one {
+    position: fixed;
+    right: 1500px;
+}
+
+.two {
+    position: fixed;
+    left: 1500px;
+}
+
+.three {
+    position: fixed;
+    left: 700px;
+}
